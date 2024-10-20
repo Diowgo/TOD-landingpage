@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-bg {
+    width: 100%
+}
+
+.section {
+    margin: 0 auto;
+    width: 968px
+}
+
+.hero header {
+    display: flex;
+}
+
+.hero header p {
+    margin-right: auto
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 720px
+}
+
+.content.hero {
+    display: flex;    
+}
+
+.content.hero .column-1, .content.hero .column-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}

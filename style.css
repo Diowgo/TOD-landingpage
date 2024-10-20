@@ -1,11 +1,25 @@
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url("./fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url("./fonts/Roboto-Light.ttf");
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto-light";
 }
 
 .section-bg {
-    width: 100%
+    width: 100%;
+    background-color: #1F2937
 }
 
 .section {
@@ -13,14 +27,26 @@
     width: 968px
 }
 
+/* HEADER*/
 .hero header {
     display: flex;
+    align-items: center;
+    height: 50px
 }
 
 .hero header p {
-    margin-right: auto
+    margin-right: auto;
+    font-size: 24px;
+    color: #F9FAF8;
+    font-family: "Roboto-bold";
 }
 
+.hero header a {
+    margin-left: 20px
+}
+
+
+/* hero content */
 .content {
     display: flex;
     align-items: center;
@@ -30,6 +56,7 @@
 
 .content.hero {
     display: flex;    
+    gap: 50px
 }
 
 .content.hero .column-1, .content.hero .column-2 {
@@ -38,4 +65,35 @@
     justify-content: center;
     align-items: flex-start;
     flex: 1;
+}
+
+.content.hero .column-1 h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-family: "Roboto-bold";
+}
+
+.hero .column-1 button {
+    margin-top: 20px
+}
+
+
+/* text styling links and secondary text*/
+
+.content.hero .column-1 p, .hero header a {
+    text-decoration: none;
+    font-style: 18px;
+    color: #e5e7eb;
+}
+
+/* appeir in a bunch of website parts*/
+
+button {
+    background-color: #3882F6;
+    padding: 10px 15px;
+    font-family: "Roboto-bold";
+    color: #F9FAF8;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px
 }

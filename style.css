@@ -108,6 +108,10 @@ button {
     font-size: 18px
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* cards */
 
 
@@ -175,4 +179,37 @@ button {
     align-self: flex-end;
     font-size: 24px;
     font-family: "Roboto-bold";
+}
+
+/* CALL TO ACTION */
+
+.section.call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #3882F6;
+    padding: 50px 100px;
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+.call-card .column-1 h1 {
+    color: #F9FAF8;
+}
+
+.call-card .column-1 p {
+    color: #e5e7eb;
+}
+
+.call-card .column-2 button {
+    border: 3px #F9FAF8 solid;
+    padding: 10px 40px;
 }

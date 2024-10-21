@@ -9,6 +9,11 @@
     src: url("./fonts/Roboto-Light.ttf");
 }
 
+@font-face {
+    font-family: "Roboto-thinitalic";
+    src: url("./fonts/Roboto-ThinItalic.ttf");
+}
+
 
 * {
     margin: 0;
@@ -17,14 +22,16 @@
     font-family: "Roboto-light";
 }
 
-.section-bg {
+.section-bg.hero-bg {
     width: 100%;
     background-color: #1F2937
 }
 
 .section {
     margin: 0 auto;
-    width: 968px
+    width: 968px;
+    height: 480px
+
 }
 
 /* HEADER*/
@@ -47,14 +54,17 @@
 
 
 /* hero content */
+
+
 .content {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 720px
+    height: 100%;
 }
 
 .content.hero {
+    margin-top: -24px;
     display: flex;    
     gap: 50px
 }
@@ -96,4 +106,73 @@ button {
     border: none;
     border-radius: 10px;
     font-size: 18px
+}
+
+/* cards */
+
+
+.cards-container {
+    display: flex;
+    gap: 37.5px
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+}
+
+.card .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 5px #3882F6 solid;
+}
+
+.card p {
+    text-align: center;
+}
+
+.section-bg.quote-bg {
+    background-color: #E5E7EB
+}
+
+.section.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.section.infos h1 {
+    margin-top: -100px;
+    font-size: 36px;
+    color: #1F2937;
+    font-family: "Roboto-bold";
+}
+
+
+.text-container, .section.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    width: 80%;
+
+}
+
+.section.quote h1 {
+    font-size: 36px;
+    color: "#1F2937";
+    font-family: "Roboto-thinitalic";
+    font-weight: 100;
+}
+
+.section.quote p {
+    align-self: flex-end;
+    font-size: 24px;
+    font-family: "Roboto-bold";
 }

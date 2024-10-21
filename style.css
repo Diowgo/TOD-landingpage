@@ -132,8 +132,13 @@ button:hover {
     border: 5px #3882F6 solid;
 }
 
+.card .image img {
+    width: 150px;
+}
+
 .card p {
     text-align: center;
+    line-break: anywhere;
 }
 
 .section-bg.quote-bg {
